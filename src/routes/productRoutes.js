@@ -15,4 +15,21 @@ router.get('/products', async (req, res) => {
     }
 })
 
+
+/*router.post('/products', (req, res) => {
+  
+    Route to add bilk items to collection
+
+    Product.collection.insertMany(req.body,(err, docs) => {
+        if(err){
+            return console.log(err)
+        } else {
+            console.log('Success')
+        }
+    })
+
+    
+})
+*/
+
 module.exports = router

@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index"
+    "dev": "env-cmd ./config/dev.env nodemon src/index"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.6.9"
+  },
+  "devDependencies": {
+    "env-cmd": "^8.0.2"
   }
 }
