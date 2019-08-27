@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node src/index.js",
     "dev": "env-cmd ./config/dev.env nodemon src/index"
   },
   "author": "",
@@ -16,3 +17,4 @@
     "env-cmd": "^8.0.2"
   }
 }
+
