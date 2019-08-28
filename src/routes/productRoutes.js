@@ -7,7 +7,6 @@ router.get('/products', async (req, res) => {
     
     try{
         const products = await Product.find()
-
         res.send(products)
 
     } catch(e) {
