@@ -15,6 +15,7 @@ router.get('/products', async (req, res) => {
 })
 
 
+
 /*router.post('/products', (req, res) => {
   
     Route to add bilk items to collection
