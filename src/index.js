@@ -14,7 +14,6 @@ const PORT = process.env.PORT
 
 
 app.listen(PORT , () => {
-    console.log(process.env.DATABASE_URI)
     console.log(`Running on server ${PORT}`)
 })
 
