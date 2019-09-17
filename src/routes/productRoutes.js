@@ -14,6 +14,19 @@ router.get('/products', async (req, res) => {
     }
 })
 
+router.get('/product/:id', async (req, res) => {
+
+    try{
+      const id = req.params.id
+      const product = await Product.findById(id)
+
+      res.send(product)
+      
+    }catch(e){
+        res.send(e)
+    }
+})
+
 
 
 /*router.post('/products', (req, res) => {
