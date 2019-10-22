@@ -29,20 +29,21 @@ router.get('/product/:id', async (req, res) => {
 
 
 
-/*router.post('/products', (req, res) => {
+router.post('/products', (req, res) => {
   
-    Route to add bilk items to collection
-
+    //Route to add bulk items to collection
+    console.log(req.body)
     Product.collection.insertMany(req.body,(err, docs) => {
         if(err){
             return console.log(err)
         } else {
             console.log('Success')
+            res.end()
         }
     })
 
     
 })
-*/
+
 
 module.exports = router

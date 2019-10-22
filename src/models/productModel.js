@@ -10,10 +10,13 @@ const productSchema = new mongoose.Schema({
   available: {
       type: Number
   },
-  imgPath: {
-      type: String
+  images: {
+      type: Array
   },
-  purchased: Number
+  purchased: Number,
+  description: {
+      type: String
+  }
 })
 
 const Product = mongoose.model('Product', productSchema)
